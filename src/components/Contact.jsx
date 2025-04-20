@@ -27,10 +27,10 @@ function Contact() {
         </div>
 
         <div className="social-icons">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vinay-h-n-97061b1a9/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/V-code578/" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
