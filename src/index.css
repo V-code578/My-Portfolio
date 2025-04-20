@@ -1,13 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #4a6cf7;
+  --color-accent: #ff6b6b;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-900: #0f172a;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Base styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-mono {
+  font-family: 'SF Mono', monospace;
+}
+
+/* Tailwind-like utility classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-text {
+  color: var(--color-text);
+}
+
+.text-text\/70, .text-text\/80 {
+  color: var(--color-text-light);
+}
+
+.text-white\/70, .text-white\/50 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary\/10 {
+  background-color: rgba(74, 108, 247, 0.1);
+}
+
+.bg-primary\/20 {
+  background-color: rgba(74, 108, 247, 0.2);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surface\/30, .bg-surface\/50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-surface-900 {
+  background-color: var(--color-surface-900);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-primary\/10, .border-primary\/20 {
+  border-color: rgba(74, 108, 247, 0.1);
+}
+
+.border-secondary\/70, .border-surface\/70 {
+  border-color: rgba(203, 213, 225, 0.7);
+}
+
+.border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
+}
+
+.hover\:bg-primary\/10:hover {
+  background-color: rgba(74, 108, 247, 0.1);
+}
+
+.hover\:bg-primary\/90:hover {
+  background-color: rgba(74, 108, 247, 0.9);
+}
+
+.hover\:text-primary:hover {
+  color: var(--color-primary);
+}
+
+/* Project-specific styles */
+.section-heading {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* Skill Bars */
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(74, 108, 247, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: width 1s ease-in-out;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(74, 108, 247, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Utilities */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animation Utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.75rem;
+  }
+}
+
+/* Dark mode (optional, can be enabled via JavaScript) */
+.dark-mode {
+  --color-text: #e2e8f0;
+  --color-text-light: #94a3b8;
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-surface-900: #030712;
 }

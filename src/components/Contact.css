@@ -1,0 +1,81 @@
+/* Contact Section Styling */
+.contact-section {
+    background-color: #081529;
+    color: white;
+    padding: 4rem 1rem;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #2c70bf; /* Pink border */
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info div span {
+    font-size: 1rem;
+    color: #d1d5db; /* Light text color */
+  }
+  
+  .contact-info div svg {
+    font-size: 1.5rem;
+    color: #2c70bf; /* Pink color for icons */
+    margin-right: 1rem;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #2c70bf; /* Pink color on hover */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 3rem 1rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-section p {
+      font-size: 1rem;
+    }
+  
+    .contact-info div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-info div span {
+      font-size: 0.9rem;
+    }
+  }
+  

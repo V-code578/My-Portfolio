@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0a192f;
+    position: fixed;
+    width: 96%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #64ffda;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links li {
+    perspective: 1000px; /* Adding perspective for 3D effect */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #ccd6f6;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for both color and tilt effect */
+  }
+  
+  .nav-links li a:hover {
+    color: #64ffda;
+    transform: rotateX(10deg) rotateY(10deg); /* Tilt effect on hover */
+  }
+  

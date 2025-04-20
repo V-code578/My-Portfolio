@@ -1,0 +1,69 @@
+.experience-section {
+    background-color: #07101e;
+    color: #ffffff;
+    padding: 5rem 1rem; /* Less padding on left and right */
+  }
+  
+  @media (min-width: 768px) {
+    .experience-section {
+      padding-left: 2.5rem; /* Reduce left padding */
+      padding-right: 3rem;
+    }
+  }
+  
+  .experience-container {
+    max-width: 1280px;
+    margin-left: 0; /* Start from the very left */
+    margin-right: auto;
+  }
+  
+  .experience-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    border-bottom: 4px solid #3fa9f5;
+    display: inline-block;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .experience-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .role-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .company-name {
+    color: #3fa9f5;
+    font-weight: 500;
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 0.25rem;
+  }
+  
+  .responsibility-list p {
+    color: #ccd6f6;
+    line-height: 1.6;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .responsibility-list span {
+    color: #3fa9f5;
+    margin-right: 0.5rem;
+  }
+  

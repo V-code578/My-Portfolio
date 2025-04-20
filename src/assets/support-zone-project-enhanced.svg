@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" rx="10" fill="#F8FAFC"/>
+  
+  <!-- Application Frame -->
+  <rect x="50" y="50" width="700" height="500" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="8" fill="#4A6CF7" />
+  <text x="80" y="85" font-family="Arial" font-size="18" font-weight="bold" fill="white">SupportZone</text>
+  
+  <!-- Left Panel -->
+  <rect x="50" y="110" width="200" height="440" fill="#F1F5F9" />
+  
+  <!-- Search Bar -->
+  <rect x="65" y="130" width="170" height="40" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="85" y="155" font-family="Arial" font-size="14" fill="#94A3B8">Search incidents...</text>
+  
+  <!-- Ticket Categories -->
+  <text x="65" y="200" font-family="Arial" font-size="14" font-weight="bold" fill="#1E293B">CATEGORIES</text>
+  
+  <rect x="65" y="215" width="170" height="35" rx="4" fill="#4A6CF7" opacity="0.1"/>
+  <text x="85" y="237" font-family="Arial" font-size="14" fill="#1E293B">All Incidents</text>
+  <text x="205" y="237" font-family="Arial" font-size="14" fill="#4A6CF7">128</text>
+  
+  <text x="85" y="277" font-family="Arial" font-size="14" fill="#64748B">Open</text>
+  <text x="205" y="277" font-family="Arial" font-size="14" fill="#64748B">46</text>
+  
+  <text x="85" y="317" font-family="Arial" font-size="14" fill="#64748B">In Progress</text>
+  <text x="205" y="317" font-family="Arial" font-size="14" fill="#64748B">34</text>
+  
+  <text x="85" y="357" font-family="Arial" font-size="14" fill="#64748B">Resolved</text>
+  <text x="205" y="357" font-family="Arial" font-size="14" fill="#64748B">48</text>
+  
+  <!-- Priority Filter -->
+  <text x="65" y="400" font-family="Arial" font-size="14" font-weight="bold" fill="#1E293B">PRIORITY</text>
+  
+  <rect x="65" y="415" width="30" height="15" rx="3" fill="#ef4444"/>
+  <text x="105" y="427" font-family="Arial" font-size="14" fill="#64748B">High</text>
+  
+  <rect x="65" y="445" width="30" height="15" rx="3" fill="#f59e0b"/>
+  <text x="105" y="457" font-family="Arial" font-size="14" fill="#64748B">Medium</text>
+  
+  <rect x="65" y="475" width="30" height="15" rx="3" fill="#10b981"/>
+  <text x="105" y="487" font-family="Arial" font-size="14" fill="#64748B">Low</text>
+  
+  <!-- Main Content -->
+  <text x="270" y="145" font-family="Arial" font-size="20" font-weight="bold" fill="#1E293B">Incident Dashboard</text>
+  
+  <!-- Incident Tiles -->
+  <rect x="270" y="165" width="460" height="100" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="270" y="165" width="8" height="100" rx="4" fill="#ef4444"/>
+  <text x="290" y="190" font-family="Arial" font-size="16" font-weight="bold" fill="#1E293B">Network Connectivity Issue</text>
+  <text x="290" y="215" font-family="Arial" font-size="14" fill="#64748B">Users unable to access the company intranet...</text>
+  <text x="290" y="245" font-family="Arial" font-size="12" fill="#94A3B8">Assigned to: IT Infrastructure Team</text>
+  <text x="650" y="245" font-family="Arial" font-size="12" fill="#94A3B8">10:45 AM</text>
+  
+  <rect x="270" y="280" width="460" height="100" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="270" y="280" width="8" height="100" rx="4" fill="#f59e0b"/>
+  <text x="290" y="305" font-family="Arial" font-size="16" font-weight="bold" fill="#1E293B">ERP System Login Failure</text>
+  <text x="290" y="330" font-family="Arial" font-size="14" fill="#64748B">Multiple users reporting authentication errors...</text>
+  <text x="290" y="360" font-family="Arial" font-size="12" fill="#94A3B8">Assigned to: Application Support</text>
+  <text x="650" y="360" font-family="Arial" font-size="12" fill="#94A3B8">09:32 AM</text>
+  
+  <rect x="270" y="395" width="460" height="100" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="270" y="395" width="8" height="100" rx="4" fill="#10b981"/>
+  <text x="290" y="420" font-family="Arial" font-size="16" font-weight="bold" fill="#1E293B">Email Delivery Delays</text>
+  <text x="290" y="445" font-family="Arial" font-size="14" fill="#64748B">External emails experiencing delays of 15-20 minutes...</text>
+  <text x="290" y="475" font-family="Arial" font-size="12" fill="#94A3B8">Assigned to: Email Systems Team</text>
+  <text x="650" y="475" font-family="Arial" font-size="12" fill="#94A3B8">Yesterday</text>
+  
+  <!-- Status Bar -->
+  <rect x="50" y="550" width="700" height="1" fill="#E2E8F0"/>
+  <text x="60" y="570" font-family="Arial" font-size="12" fill="#64748B">Connected to ServiceNow API • Last synced: 2 minutes ago</text>
+  
+  <!-- Navigation Icons -->
+  <circle cx="680" y="80" r="15" fill="white" opacity="0.2"/>
+  <circle cx="720" y="80" r="15" fill="white" opacity="0.2"/>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="250" cy="250" r="250" fill="#4a6cf7" opacity="0.1"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="250" cy="250" r="200" stroke="#4a6cf7" stroke-width="4" stroke-dasharray="10 5" opacity="0.7"/>
+  <circle cx="250" cy="250" r="150" fill="#ffffff" stroke="#4a6cf7" stroke-width="3"/>
+  
+  <!-- Abstract Person Silhouette -->
+  <path d="M250 100C215.5 100 187.5 128 187.5 162.5C187.5 197 215.5 225 250 225C284.5 225 312.5 197 312.5 162.5C312.5 128 284.5 100 250 100Z" fill="#1e293b"/>
+  <path d="M325 300C325 275.5 291.25 250 250 250C208.75 250 175 275.5 175 300V400H325V300Z" fill="#1e293b"/>
+  
+  <!-- Tech Icons -->
+  <circle cx="170" cy="350" r="20" fill="#4a6cf7" opacity="0.7"/>
+  <circle cx="330" cy="350" r="20" fill="#ff6b6b" opacity="0.7"/>
+  <circle cx="170" cy="170" r="15" fill="#ff6b6b" opacity="0.7"/>
+  <circle cx="330" cy="170" r="15" fill="#4a6cf7" opacity="0.7"/>
+
+  <!-- Code elements -->
+  <rect x="220" y="310" width="60" height="5" rx="2.5" fill="#4a6cf7"/>
+  <rect x="220" y="325" width="40" height="5" rx="2.5" fill="#4a6cf7"/>
+  <rect x="220" y="340" width="50" height="5" rx="2.5" fill="#4a6cf7"/>
+  
+  <!-- Glasses outline -->
+  <path d="M230 175C230 175 235 170 250 170C265 170 270 175 270 175" stroke="#4a6cf7" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="230" cy="175" r="15" stroke="#4a6cf7" stroke-width="3" fill="none"/>
+  <circle cx="270" cy="175" r="15" stroke="#4a6cf7" stroke-width="3" fill="none"/>
+</svg>

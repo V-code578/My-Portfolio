@@ -1,0 +1,97 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+    background-color: #0a192f;/* Ensure background color is applied */
+    color: #ffffff;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .about-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #3fa9f5;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-left p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .blue-highlight {
+    color: #3fa9f5;
+    font-weight: 600;
+  }
+  
+  .about-right {
+    flex: 0.8;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .about-card {
+    background-color: transparent;
+    padding-left: 20px;  /* Space between the line and text */
+    position: relative;  /* To position the line */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3fa9f5;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+  }
+  
+  .card-subtitle {
+    color: #00bfff;
+    font-weight: 500;
+    margin-top: 0.2rem;
+  }
+  
+  .card-details,
+  .card-location {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  /* Add vertical line to the left side of the Education and Current Role sections */
+  .about-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 26%;
+    height: 70%;
+    width: 1px; /* Width of the vertical line */
+    background-color: #3fa9f5; /* Color of the line */
+  }
+  
