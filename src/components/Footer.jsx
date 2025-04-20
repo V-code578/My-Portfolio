@@ -40,6 +40,9 @@ function Footer() {
         <Link to="about" smooth={true} duration={500} className="cursor-pointer hover:text-pink-500">
           About
         </Link>
+        <Link to="experience" smooth={true} duration={500} className="cursor-pointer hover:text-pink-500">
+          Experience
+        </Link>
         <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-pink-500">
           Projects
         </Link>
