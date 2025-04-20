@@ -138,4 +138,21 @@
     color: #081529;
 }
 
+/* Icon images */
+.skill-icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #374151;
+    padding: 4px;
+    border-radius: 0.375rem;
+  }
+  
+  /* Expertise tag image icon */
+  .tag-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
   
