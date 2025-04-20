@@ -1,28 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 import "./Hero.css";
 import heroImage from "../assets/Vinay.png";
 
 export default function Hero() {
-  const imgRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      const { clientX: mouseX, clientY: mouseY } = event;
-      const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
-
-      const rotateX = (mouseY / windowHeight - 0.5) * 30;
-      const rotateY = (mouseX / windowWidth - 0.5) * -30;
-
-      if (imgRef.current) {
-        imgRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      }
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/Vinay_H_N_Resume.pdf"; // Path in the public folder
@@ -57,10 +38,9 @@ export default function Hero() {
       </div>
       <div className="hero-image-container">
         <img
-          ref={imgRef}
           src={heroImage}
           alt="Vinay H N"
-          className="w-full h-full object-cover"
+          className="hero-image rotating-image"
         />
       </div>
     </section>
