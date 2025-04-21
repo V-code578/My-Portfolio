@@ -13,7 +13,7 @@
   
   .experience-container {
     max-width: 1280px;
-    margin-left: 0; /* Start from the very left */
+    margin-left: 25px; /* Start from the very left */
     margin-right: auto;
   }
   

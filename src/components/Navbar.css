@@ -1,40 +1,87 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #0a192f;
-    position: fixed;
-    width: 96%;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0a192f;
+  position: fixed;
+  width: 96%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #64ffda;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  perspective: 1000px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #64ffda;
+  transform: rotateX(10deg) rotateY(10deg);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #ccd6f6;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
   }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #64ffda;
-  }
-  
+
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+      position: fixed;
+      top: 70px; /* Adjust based on your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #0a192f;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      padding: 2rem 0;
+      height: calc(100vh - 70px);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      overflow-y: auto;
   }
-  
+
+  .nav-links.active {
+      transform: translateX(0);
+  }
+
   .nav-links li {
-    perspective: 1000px; /* Adding perspective for 3D effect */
+      width: 100%;
+      text-align: center;
   }
-  
+
   .nav-links li a {
-    text-decoration: none;
-    color: #ccd6f6;
-    font-weight: 600;
-    transition: color 0.3s ease, transform 0.3s ease; /* Transition for both color and tilt effect */
+      padding: 0.5rem 0;
+      display: block;
+      width: 100%;
   }
-  
-  .nav-links li a:hover {
-    color: #64ffda;
-    transform: rotateX(10deg) rotateY(10deg); /* Tilt effect on hover */
-  }
-  
+}
