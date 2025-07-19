@@ -20,7 +20,7 @@ function ExperienceSection() {
           {/* Right - Responsibilities */}
           <div className="responsibility-list">
             {[
-              "1.8+ years of experience in developing scalable and efficient full-stack applications using .NET Core and React JS.",
+              "Around 2 years of experience in developing scalable and efficient full-stack applications using .NET Core and React JS.",
               "Proficient in the software development lifecycle (SDLC), including requirement analysis, design, development, testing, deployment, and support.",
               "Developed robust applications using .NET Core, ASP.NET, React.js and Entity Framework while meeting strict deadlines.",
               "Actively contributed to Agile methodologies, including sprint planning, daily stand-ups, and client interactions.",

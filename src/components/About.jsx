@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-left">
         <h2 className="about-title">About Me</h2>
         <p>
-          I am a highly skilled <span className="blue-highlight">.NET Full Stack Developer</span> with over 1.8 years of experience in C#, ASP.NET Core, and React JS. I specialize in API development, secure authentication, and data optimization.
+          I am a highly skilled <span className="blue-highlight">.NET Full Stack Developer</span> with approximately 2 years of experience in C#, ASP.NET Core, and React JS. I specialize in API development, secure authentication, and data optimization.
         </p>
         <p>
           My technical expertise includes developing robust applications using .NET Core, ASP.NET, React.js, and Entity Framework while meeting strict deadlines. I have a proven track record of working on high-impact projects like the Payroll Input System and SupportZone, with a focus on workflow automation and role-based access control.
