@@ -66,8 +66,8 @@ const Skills = () => {
             <h3>Frameworks & Technologies</h3>
             <SkillBar name=".NET Core" icon={<ImageIcon src={DotNetCore} alt=".NET Core" />} percent={95} />
             <SkillBar name="ASP.NET MVC" icon={<ImageIcon src={AspNet} alt="ASP.NET MVC" />} percent={90} />
-            <SkillBar name="Angular" icon={<ImageIcon src={Angular} alt="Angular" />} percent={70} />
             <SkillBar name="React.js" icon={<ImageIcon src={ReactLogo} alt="React" />} percent={80} />
+            <SkillBar name="Angular" icon={<ImageIcon src={Angular} alt="Angular" />} percent={70} />
           </div>
 
           {/* Tools & Deployment */}
