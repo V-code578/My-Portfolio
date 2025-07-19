@@ -24,6 +24,7 @@ import OOPS from "../assets/OOPS.jpeg";
 import Entity from "../assets/EntityFramework.png";
 import Java from "../assets/Java.png";
 import JavaScript from "../assets/Javascript.png";
+import Angular from "../assets/Angular.png";
 
 const ImageIcon = ({ src, alt }) => (
   <img src={src} alt={alt} className="skill-icon-img" />
@@ -65,7 +66,7 @@ const Skills = () => {
             <h3>Frameworks & Technologies</h3>
             <SkillBar name=".NET Core" icon={<ImageIcon src={DotNetCore} alt=".NET Core" />} percent={95} />
             <SkillBar name="ASP.NET MVC" icon={<ImageIcon src={AspNet} alt="ASP.NET MVC" />} percent={90} />
-            <SkillBar name="Entity Framework" icon={<ImageIcon src={Entity} alt="Entity Framework" />} percent={85} />
+            <SkillBar name="Angular" icon={<ImageIcon src={Angular} alt="Angular" />} percent={85} />
             <SkillBar name="React.js" icon={<ImageIcon src={ReactLogo} alt="React" />} percent={80} />
           </div>
 

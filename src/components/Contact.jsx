@@ -22,7 +22,7 @@ function Contact() {
           </div>
           <div>
             <FaMapMarkerAlt />
-            <span>Davanagere-577002, Karnataka, India</span>
+            <span>Davanagere-577006, Karnataka, India</span>
           </div>
         </div>
 
